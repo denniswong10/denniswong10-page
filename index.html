@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Server Processing</title>
+	<link rel="stylesheet" type="text/css" href="../database/style/style.css">
+	<link href="../database/images/profile_icon.png" rel="shortcut icon">
+	<script src="../database/scripts/contentID.js"></script> <!--  Javascript "contentID.js"  -->
+	<script src="../database/scripts/program.js"></script> <!--   Javascript "program.js"  --> 
+	<script src="../database/scripts/log.js"></script> <!--   Javascript "log.js" -->
+	<script>
+		function loadsite_waiting() {
+			setTimeout(loadsite_portfolio, 3000);
+		}
+		function loadsite_portfolio() {
+			window.location.assign("home.php");
+		}
+	</script>
+</head>
+<body onload="loadsite_waiting();">
+    <div class="info-board">
+	    <table class="envet_table_row">
+	    	<tr>
+	    		<td width="610" align="center" colspan="7"><h1><u>Awaiting for database comfirmation</u></h1></td>
+	    	</tr>
+
+			<tr>
+				<td class="text_writeEvent" width="510" height="150" align="center" colspan="6">
+					<h4>- Please wait while we are retrieving the database -</h4><br/>
+					<h4>Do not close this browser while the site is loading up</h4>
+					<h4>Contact the owner for more information</h4>
+					<h4>Email: denniswong10.rhythmspro@gmail.com</h4><br />
+					<h4 id="visitor_id">Visitor ID: </h4>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
